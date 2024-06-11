@@ -111,5 +111,5 @@ Route::middleware(['auth', 'role:super-admin|admin|user'])->prefix(config("admin
 
 
 
-Auth::routes(['register' => false]);
+Auth::routes(['register' => true]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
